@@ -5,7 +5,7 @@ pkgs.buildGoModule rec {
    version = "2.1.14";
    src = "${theSource}";
 
-   vendorHash = "sha256:0ivzsvsl9p0fawkhm8a5sqw7ql414xpw6s7iq5h6qcv3vp27m5ba";
+   vendorHash = null;
    proxyVendor = true;
 
    meta = with pkgs.lib; {
