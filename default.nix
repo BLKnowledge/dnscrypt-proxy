@@ -1,8 +1,9 @@
-{ lib, buildGoModule, fetchFromGitHub }:
+{ pkgs ? import <nixpkgs> {}, src ? ./. }:
+let theSource = src; in
 buildGoModule rec {
    pname = "dnscrypt-proxy";
    version = "2.1.14";
-   src = ./.;
+   src = ${theSource};
 
    vendorHash = "sha256:0ivzsvsl9p0fawkhm8a5sqw7ql414xpw6s7iq5h6qcv3vp27m5ba";
    proxyVendor = true;
