@@ -4,7 +4,7 @@ buildGoModule rec {
    version = "2.1.14";
    src = ./.;
 
-   vendorHash = "";
+   vendorHash = "sha256:0ivzsvsl9p0fawkhm8a5sqw7ql414xpw6s7iq5h6qcv3vp27m5ba";
    proxyVendor = true;
 
    meta = with lib; {
