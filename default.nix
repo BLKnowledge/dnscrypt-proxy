@@ -1,6 +1,6 @@
 { pkgs ? import <nixpkgs> {}, src ? ./. }:
 let theSource = src; in
-buildGoModule rec {
+pkgs.buildGoModule rec {
    pname = "dnscrypt-proxy";
    version = "2.1.14";
    src = "${theSource}";
